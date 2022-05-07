@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/monContenair">
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/lineUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/picture"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/picture"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:text="title" />
+            <TextView
+                android:id="@+id/firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/picture"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:text="firstname" />
+
+            <TextView
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/picture"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:text="lastname" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/publishDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineUserName"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/picture"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="Post timestamp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/picture"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/publishDate"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/image"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="Post text" />
+
+        <LinearLayout
+            android:id="@+id/lineTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_toEndOf="@+id/image"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tag1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="tag 1"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="tag 2"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineTag"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/image"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:paddingLeft="15dp"
+            android:paddingTop="2dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:text="tag 3" />
+
+        <ImageView
+            android:id="@+id/trash"
+            android:layout_width="32dp"
+            android:layout_height="44dp"
+            android:layout_above="@+id/lineTag"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/delete" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
