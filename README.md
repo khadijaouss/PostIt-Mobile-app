@@ -1,5 +1,5 @@
 # PostIt
-mobile application
+
 This is a mobile app that allows to manage a list of Posts. These Posts can be retrieved from the following REST API.
 This API is accessible via this link: https://dummyapi.io/data/v1/post
 
